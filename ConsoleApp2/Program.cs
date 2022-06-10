@@ -9,6 +9,7 @@ namespace ConsoleApp2
         {
             int WagePerHour = 20;
             int DayHour = 0;
+            int TotalWorkingDay = 20;
             Random r = new Random();
             int employee_check = r.Next(0, 3);
 
@@ -30,6 +31,8 @@ namespace ConsoleApp2
             int DailyTotalWage = WagePerHour * DayHour;
             Console.WriteLine(DailyTotalWage);
 
+            int TotalMonthlySalary = TotalWorkingDay * DailyTotalWage;
+            Console.WriteLine(TotalMonthlySalary);
         }
 
      }
