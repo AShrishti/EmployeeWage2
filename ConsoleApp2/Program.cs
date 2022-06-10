@@ -12,22 +12,21 @@ namespace ConsoleApp2
             Random r = new Random();
             int employee_check = r.Next(0, 3);
 
-            if (employee_check == 1)
+            switch (employee_check)
             {
-                Console.WriteLine("Employee is present");
-                 DayHour = 8;
+                case 1:
+                    Console.WriteLine("Employee is present");
+                    DayHour = 8;
+                    break;
+                case 2:
+                    Console.WriteLine("Employee is present and Worked part time");
+                    DayHour = 4;
+                    break;
+                case 0:
+                    Console.WriteLine("Employee is absent");
+                    break;
             }
-
-            else if(employee_check == 2)
-            {
-                Console.WriteLine("Employee is present and Worked part time");
-                DayHour = 4;
-            }
-            else
-            {
-                Console.WriteLine("Employee is absent");
-
-            }
+  
             int DailyTotalWage = WagePerHour * DayHour;
             Console.WriteLine(DailyTotalWage);
 
