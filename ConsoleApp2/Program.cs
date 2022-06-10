@@ -13,6 +13,9 @@ namespace ConsoleApp2
             Random r = new Random();
             int employee_check = r.Next(0, 3);
 
+            Random ranDay = new Random();
+            int minWorkingDay = r.Next(11, 22);
+
             switch (employee_check)
             {
                 case 1:
@@ -27,12 +30,19 @@ namespace ConsoleApp2
                     Console.WriteLine("Employee is absent");
                     break;
             }
-  
-            int DailyTotalWage = WagePerHour * DayHour;
-            Console.WriteLine(DailyTotalWage);
+            int minTime = DayHour * minWorkingDay;
+            if (minTime == 100 && TotalWorkingDay == 20)
+            {
+                int DailyTotalWage = WagePerHour * DayHour;
+                Console.WriteLine(DailyTotalWage);
 
-            int TotalMonthlySalary = TotalWorkingDay * DailyTotalWage;
-            Console.WriteLine(TotalMonthlySalary);
+                int TotalMonthlySalary = TotalWorkingDay * DailyTotalWage;
+                Console.WriteLine(TotalMonthlySalary);
+            }
+            else {
+                Console.WriteLine("minimum workin hour not reached");
+            }
+
         }
 
      }
