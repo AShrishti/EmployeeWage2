@@ -31,13 +31,13 @@ namespace ConsoleApp2
                     break;
             }
             int minTime = DayHour * minWorkingDay;
-            if (minTime == 100 && TotalWorkingDay == 20)
+            if (minTime >= 100 && TotalWorkingDay >= 20)
             {
                 int DailyTotalWage = WagePerHour * DayHour;
                 Console.WriteLine(DailyTotalWage);
 
                 int TotalMonthlySalary = TotalWorkingDay * DailyTotalWage;
-                Console.WriteLine(TotalMonthlySalary);
+                Console.WriteLine("Total monthly salary of Employee is "+TotalMonthlySalary);
             }
             else {
                 Console.WriteLine("minimum workin hour not reached");
