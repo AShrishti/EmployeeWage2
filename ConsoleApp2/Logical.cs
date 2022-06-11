@@ -12,6 +12,7 @@ namespace ConsoleApp2
         {
             Console.WriteLine("Welcome to Day 6 assignment");
           // to print Fibinacci series
+
             int n1 = 0, n2 = 1, n3, number;
             Console.WriteLine("Enter no of term in series");
             number=int.Parse(Console.ReadLine());
@@ -25,7 +26,7 @@ namespace ConsoleApp2
                 n2 = n3;
             
             }
-          //perfect number
+          //to check no perfect number
 
             int number1, sum = 0, n;
             Console.WriteLine("Enter the number");
