@@ -10,7 +10,7 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-
+            Console.WriteLine("Welcome to Day 6 assignment");
             //Fibinacci series
             int n1 = 0, n2 = 1, n3, number;
             Console.WriteLine("Enter no of term in series");
@@ -25,7 +25,7 @@ namespace ConsoleApp2
                 n2 = n3;
             
             }
-            //perfect number
+          //perfect number
 
             int number1, sum = 0, n;
             Console.WriteLine("Enter the number");
@@ -48,7 +48,7 @@ namespace ConsoleApp2
                 }
 
 
-            //check no is prime no or not
+          //check no is prime no or not
             int num, m = 0, flag = 0;
             Console.WriteLine("Enter the number to check prime no");
             num = int.Parse(Console.ReadLine());
@@ -78,7 +78,7 @@ namespace ConsoleApp2
             }
                 Console.WriteLine("reverse no is "+reverse);
             
-
+//
         }
 
 
