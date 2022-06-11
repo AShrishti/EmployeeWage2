@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ConsoleApp2
 {
     internal class Logical
-    {
+    {/*
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Day 6 Logical assignment");
@@ -82,7 +82,7 @@ namespace ConsoleApp2
 //
         }
 
-
+        */
     }
 
   }

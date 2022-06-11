@@ -8,31 +8,14 @@ namespace ConsoleApp2
 
         {
             int WagePerHour = 20;
-            int DayHour = 0;
             int TotalWorkingDay = 22;
             int minTime = 0;
+            int DayHour = 0;
 
+            
             for (int i = 0; i < TotalWorkingDay; i++)
-            {
-                Random r = new Random();
-                int employee_check = r.Next(0, 3);
-
-
-                switch (employee_check)
-                {
-                    case 1:
-                        Console.WriteLine("Employee is present");
-                        DayHour = 8;
-                        break;
-                    case 2:
-                        Console.WriteLine("Employee is present and Worked part time");
-                        DayHour = 4;
-                        break;
-                    case 0:
-                        Console.WriteLine("Employee is absent");
-                        break;
-                }
-
+            { 
+                DayHour = Program.WorkingHour();
                 minTime = minTime + DayHour;
 
                 //Console.WriteLine(DayHour);
@@ -51,7 +34,30 @@ namespace ConsoleApp2
             }
            
         }
+        public static int WorkingHour()
+        {
+            int DayHour = 0;
+            Random r = new Random();
+            int employee_check = r.Next(0, 3);
 
-     }  
+            switch (employee_check)
+            {
+                case 1:
+                    Console.WriteLine("Employee is present");
+                    DayHour = 8;
+                    break;
+                case 2:
+                    Console.WriteLine("Employee is present and Worked part time");
+                    DayHour = 4;
+                    break;
+                case 0:
+                    Console.WriteLine("Employee is absent");
+                    break;
+            }
+            return DayHour;
+        }
+
+
     }
+}
 
