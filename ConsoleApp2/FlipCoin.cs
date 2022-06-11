@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
-    internal class FlipCoin
+    public class FlipCoin
     {
-
+        /*
         static void Main(string[] args) {
 
-            /*
+            
             int number = 100;
             int noOfHead =0,noOfTail=0;
             while(number>=1) {
@@ -57,9 +57,9 @@ namespace ConsoleApp2
                 Console.WriteLine(sum);
                     num--;
             
-            } */
-            //harmonic series
-            float sum = 0;
+            } 
+        //harmonic series
+        float sum = 0;
             Console.WriteLine("Enter the number");
             int num1 = int.Parse(Console.ReadLine());
 
@@ -71,6 +71,6 @@ namespace ConsoleApp2
             }
             Console.WriteLine(sum);
 
-        }
+        }*/
     }
 }
