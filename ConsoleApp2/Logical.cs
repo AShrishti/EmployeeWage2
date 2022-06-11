@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 namespace ConsoleApp2
 {
     internal class Logical
-    {/*
+    {
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Day 6 Logical assignment");
-          // to print Fibinacci series
+      // to print Fibinacci series
 
             int n1 = 0, n2 = 1, n3, number;
             Console.WriteLine("Enter no of term in series");
@@ -26,7 +26,7 @@ namespace ConsoleApp2
                 n2 = n3;
             
             }
-          //to check no perfect number
+       //to check no perfect number
 
             int number1, sum = 0, n;
             Console.WriteLine("Enter the number");
@@ -49,7 +49,7 @@ namespace ConsoleApp2
                 }
 
 
-          //check no is prime no or not
+       //check no is prime no or not
             int num, m = 0, flag = 0;
             Console.WriteLine("Enter the number to check prime no");
             num = int.Parse(Console.ReadLine());
@@ -67,7 +67,7 @@ namespace ConsoleApp2
             if (flag == 0)
                 Console.WriteLine("No is prime");
             
-            //to reverse a number
+         //to reverse a number
             Console.WriteLine("Enter the number to reverse");
            int num3 = int.Parse(Console.ReadLine());
             int reverse = 0;
@@ -79,10 +79,10 @@ namespace ConsoleApp2
             }
                 Console.WriteLine("reverse no is "+reverse);
             
-//
+
         }
 
-        */
+        
     }
 
   }
