@@ -10,7 +10,7 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Day 6 assignment");
+            Console.WriteLine("Welcome to Day 6  Logical assignment");
           // to print Fibinacci series
 
             int n1 = 0, n2 = 1, n3, number;
