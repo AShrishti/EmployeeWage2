@@ -8,7 +8,7 @@ namespace ConsoleApp2
 {
     public class FlipCoin
     {
-        /*
+        
         static void Main(string[] args) {
 
             
@@ -59,18 +59,18 @@ namespace ConsoleApp2
             
             } 
         //harmonic series
-        float sum = 0;
+        float sum2=0,n = 0;
             Console.WriteLine("Enter the number");
             int num1 = int.Parse(Console.ReadLine());
 
             for (int i = 1; i <= num1; i++) {
+                n = 1 /(float)i;
+                sum2 =sum2 + n;
+                
 
-
-                 sum = sum +( 1 / (float)i); 
-               
             }
             Console.WriteLine(sum);
 
-        }*/
+        }
     }
 }
