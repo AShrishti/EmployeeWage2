@@ -11,7 +11,7 @@ namespace ConsoleApp2
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Day 6 assignment");
-            //Fibinacci series
+          // to print Fibinacci series
             int n1 = 0, n2 = 1, n3, number;
             Console.WriteLine("Enter no of term in series");
             number=int.Parse(Console.ReadLine());
