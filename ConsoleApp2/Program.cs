@@ -3,40 +3,47 @@
 namespace ConsoleApp2
 {
     public class Program
-    { /*
+    {
         static void Main(string[] args)
 
         {
             int WagePerHour = 20;
             int DayHour = 0;
-            int TotalWorkingDay = 20;
-            Random r = new Random();
-            int employee_check = r.Next(0, 3);
+            int TotalWorkingDay = 22;
+            int minTime = 0;
 
-            Random ranDay = new Random();
-            int minWorkingDay = r.Next(11, 22);
-
-            switch (employee_check)
+            for (int i = 0; i < TotalWorkingDay; i++)
             {
-                case 1:
-                    Console.WriteLine("Employee is present");
-                    DayHour = 8;
-                    break;
-                case 2:
-                    Console.WriteLine("Employee is present and Worked part time");
-                    DayHour = 4;
-                    break;
-                case 0:
-                    Console.WriteLine("Employee is absent");
-                    break;
+                Random r = new Random();
+                int employee_check = r.Next(0, 3);
+
+
+                switch (employee_check)
+                {
+                    case 1:
+                        Console.WriteLine("Employee is present");
+                        DayHour = 8;
+                        break;
+                    case 2:
+                        Console.WriteLine("Employee is present and Worked part time");
+                        DayHour = 4;
+                        break;
+                    case 0:
+                        Console.WriteLine("Employee is absent");
+                        break;
+                }
+
+                minTime = minTime + DayHour;
+
+                //Console.WriteLine(DayHour);
+                
             }
-            int minTime = DayHour * minWorkingDay;
+              //  int DailyTotalWage = WagePerHour * DayHour;
+            //    Console.WriteLine(DailyTotalWage);
+
             if (minTime >= 100 && TotalWorkingDay >= 20)
             {
-                int DailyTotalWage = WagePerHour * DayHour;
-                Console.WriteLine(DailyTotalWage);
-
-                int TotalMonthlySalary = TotalWorkingDay * DailyTotalWage;
+                int TotalMonthlySalary = minTime * WagePerHour;
                 Console.WriteLine("Total monthly salary of Employee is "+TotalMonthlySalary);
             }
             else {
@@ -45,6 +52,6 @@ namespace ConsoleApp2
            
         }
 
-     }  */
+     }  
     }
-}
+
