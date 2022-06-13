@@ -3,10 +3,9 @@
 namespace ConsoleApp2
 {
     public class Program
-    {
-        static void Main(string[] args)
-
-        {
+    { 
+        public static void ComputeEmployeeWage() { 
+           
             int WagePerHour = 20;
             int TotalWorkingDay = 22;
             int minTime = 0;
@@ -32,7 +31,7 @@ namespace ConsoleApp2
             else {
                 Console.WriteLine("minimum workin hour not reached");
             }
-           
+ 
         }
         public static int WorkingHour()
         {
