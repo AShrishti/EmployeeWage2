@@ -11,7 +11,9 @@ namespace ConsoleApp2
 
         static void Main(string[] args)
         {
-        Program.ComputeEmployeeWage();
-         }
+        Program.ComputeEmployeeWage("Reliance",20,23);
+         Program.ComputeEmployeeWage("VMart", 25, 25);
+
+        }
     }
 }
