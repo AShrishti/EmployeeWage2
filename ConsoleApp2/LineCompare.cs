@@ -11,7 +11,8 @@ namespace ConsoleApp2
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Welcome to Line Comparison Computation Program on Master Branch");
+            Console.WriteLine("Welcome to Line Comparison Computation Program on Main Branch");
+
             Console.WriteLine("Enter value for x1 for first line");
             int x1 = Int32.Parse(Console.ReadLine());
             Console.WriteLine("Enter value for x2 for first line");
@@ -24,7 +25,7 @@ namespace ConsoleApp2
             int y = (y2 - y1) * (y2 - y1);
             int z = x + y;
             double length1 = Math.Sqrt(z);
-            Console.WriteLine("Length of the first line is" + length1);
+            Console.WriteLine("Length of the first line is" +length1);
 
 
             Console.WriteLine("Enter value for x1 for Second line");
@@ -39,7 +40,7 @@ namespace ConsoleApp2
             int b = (y4 - y3) * (y4 - y3);
             int c = a + b;
             double length2 = Math.Sqrt(c);
-            Console.WriteLine("Length of the first line is" + length2);
+            Console.WriteLine("Length of the second line is" +length2);
 
             if (length1.CompareTo(length2) == 0)
             {
