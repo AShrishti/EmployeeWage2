@@ -8,12 +8,16 @@ namespace ConsoleApp2
 {
     internal class EmployeeWage
     {
-        /*
+        
         static void Main(string[] args)
         {
         Program.ComputeEmployeeWage("Reliance",20,23);
-         Program.ComputeEmployeeWage("VMart", 25, 25);
+            Program.ComputeEmployeeWage("VMart", 25, 25);
+            Console.WriteLine("MyEmployee)
 
-        }*/
+
+
+
+        }
     }
 }
