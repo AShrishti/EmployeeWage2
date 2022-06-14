@@ -12,6 +12,7 @@ namespace ConsoleApp2
         {
         Program.ComputeEmployeeWage("Reliance",20,23);
          Program.ComputeEmployeeWage("VMart", 25, 25);
+            Console.WriteLine("LineComparison)
         }      
 }
     }
